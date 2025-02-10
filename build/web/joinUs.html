@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="Media/swaws.png" alt="Logo"></a>
+            </div>               
+            <nav class="nav">
+                <button class="menu-toggle" aria-label="Toggle navigation menu">
+                    <span class="menu-icon"></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="disaster.html">Disaster</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="locations.html">Locations</a></li>
+                    <li><a href="request.html">Requests</a></li>
+                    <li><a href="contacts.html">Contact</a></li>
+                    <li><a href="joinUs.html" style="color: #020742;">Join Us</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="join-us-section">
+        <h1>Join Us</h1>
+        <h2>Join Us as a Volunteer</h2>
+        <p>Fill out the form below to apply as a volunteer. Together, we can make a difference!</p>
+        <form id="volunteerForm">
+            <div class="form-group">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Full Name " required>
+            </div>
+
+            <div class="form-group">
+                <label for="IC">IC:</label>
+                <input type="IC" id="IC" name="IC" placeholder="IC " required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Email " required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Phone Number " required>
+            </div>
+
+            <div class="form-group">
+                <label for="interest">Area of Interest:</label>
+                <select id="interest" name="interest" required>
+                    <option value="">Select an area</option>
+                    <option value="disaster-relief">Disaster Relief</option>
+                    <option value="logistics">Logistics</option>
+                    <option value="medical-support">Medical Support</option>
+                    <option value="community-outreach">Community Outreach</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Why do you want to join us?</label>
+                <textarea id="message" name="message" placeholder="Write a short motivation" rows="5" required></textarea>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <footer>
+        <p>© 2024 Disaster Relief Coordination System</p>
+    </footer>
+</body>
+</html>
